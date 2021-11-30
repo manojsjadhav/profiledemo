@@ -1,0 +1,76 @@
+.imagesection {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .img {
+    width: 100%;
+    height: 60vh;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .About-info {
+    margin-left: 2rem;
+    h4 {
+      font-size: 2rem;
+    }
+    .About-text {
+      padding: 1rem 0;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    .about-info {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+.About-details {
+  display: flex;
+  p {
+    padding: 0.1rem 0;
+  }
+  .right-section {
+    margin-left: 2.3rem;
+  }
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: #037fff;
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    background-color: #2f409eef;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+.skills-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 4rem;
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
