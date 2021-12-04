@@ -18,7 +18,6 @@ const Blogspage = () => {
                   {blog.title}
                 </a>
               </div>
-              
             </div>
           );
         })}
